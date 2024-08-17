@@ -6,10 +6,10 @@
    1. Write a program that stores:
         - An array of five random integers
         - A Date object instance using the current date
-        = An array of five random double values
+        - An array of five random double values
    2. Write the data in a file titled ERosales_datafile.dat.
    3. Write a second program that will read the file and display the data.
-   4. Test the code to ensure teh code functions correctly
+   4. Test the code to ensure the code functions correctly
 
    First Program - Writes the data
  */
