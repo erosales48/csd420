@@ -2,6 +2,7 @@
 module org.example.csd420 {
     requires javafx.graphics;
     requires javafx.controls;
+    requires jdk.jdi;
 
     opens org.example.csd420 to javafx.fxml;
     exports org.example.csd420;
