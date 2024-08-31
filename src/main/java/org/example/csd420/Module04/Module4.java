@@ -48,17 +48,20 @@ public class Module4 {
         long startTime = System.nanoTime();
         iteratorTraversal(list);
         long endTime = System.nanoTime();
-        long timeElapsedWithIterator = endTime - startTime;
-        System.out.println("\tTime taken using iterator: " + timeElapsedWithIterator + " nanoseconds");
+        double timeElapsedWithIterator = (endTime - startTime) / 1_000_000_000.0;
+        timeElapsedWithIterator = Math.round(timeElapsedWithIterator * 1_000.0) / 1_000.0;
+        System.out.println("\tTime taken using iterator: " + timeElapsedWithIterator + " seconds");
 
         // Test time for traversal with get(index) method
         startTime = System.nanoTime();
         getIndexTraversal(list);
         endTime = System.nanoTime();
-        long timeElapsedWithGetIndex = endTime - startTime;
-        System.out.println("\tTime taken using get(index): " + timeElapsedWithGetIndex + " nanoseconds");
+        double timeElapsedWithGetIndex = (endTime - startTime) / 1_000_000_000.0;
+        timeElapsedWithGetIndex = Math.round(timeElapsedWithGetIndex * 1_000.0) / 1_000.0;
+        System.out.println("\tTime taken using get(index): " + timeElapsedWithGetIndex + " seconds");
     }
 
+    @SuppressWarnings("WhileLoopReplaceableByForEach")
     private static void iteratorTraversal(LinkedList<Integer> list) {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
@@ -66,6 +69,7 @@ public class Module4 {
         }
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     private static void getIndexTraversal(LinkedList<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             list.get(i);
