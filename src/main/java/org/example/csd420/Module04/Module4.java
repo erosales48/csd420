@@ -71,9 +71,14 @@ public class Module4 {
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
     private static void getIndexTraversal(LinkedList<Integer> list) {
+        System.out.print("Working: [");
         for (int i = 0; i < list.size(); i++) {
             list.get(i);
+            if (i % 10000 == 0) {
+                System.out.print(".");
+            }
         }
+        System.out.println("]");
     }
 
     /* Using Iterator for traversal is faster than using the get(index) method
