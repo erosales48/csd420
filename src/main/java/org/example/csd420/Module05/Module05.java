@@ -33,12 +33,18 @@ public class Module05 {
             Set<String> words = new TreeSet<>(wordCount.keySet());
 
             int originalCount = 0;
-            System.out.println("Word Counts: ");
+            int iterator = 0;
+            System.out.println("=====Words Counted===== ");
             for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+                iterator++;
                 String key = entry.getKey();
                 Integer count = entry.getValue();
-                System.out.println(key + ": " + count);
+                System.out.printf("%-11s", key);
+                System.out.print(": " + count + "\t\t");
                 originalCount += count;
+                if (iterator % 3 == 0) {
+                    System.out.println();
+                }
             }
             System.out.println("Original word Count: " + originalCount + "\n\n");
             System.out.println("Total unique words: " + words.size());
