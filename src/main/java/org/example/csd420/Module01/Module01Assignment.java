@@ -14,7 +14,7 @@
    This program is extra as I have created a JavaFX version in addition to requirements
  */
 
-package org.example.csd420.module01;
+package org.example.csd420.Module01;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

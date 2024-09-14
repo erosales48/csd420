@@ -6,6 +6,6 @@ module org.example.csd420 {
 
     opens org.example.csd420 to javafx.fxml;
     exports org.example.csd420;
-    exports org.example.csd420.module01;
-    opens org.example.csd420.module01 to javafx.fxml;
+    exports org.example.csd420.Module01;
+    opens org.example.csd420.Module01 to javafx.fxml;
 }

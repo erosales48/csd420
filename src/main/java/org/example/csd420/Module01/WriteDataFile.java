@@ -14,7 +14,7 @@
    First Program - Writes the data
  */
 
-package org.example.csd420.module01;
+package org.example.csd420.Module01;
 
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
