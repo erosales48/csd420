@@ -9,11 +9,7 @@ import javafx.scene.layout.HBox;
 
 public class Module07 extends Application {
 
-    public Module07() {
-        super();
-    }
-
-    @Override
+     @Override
     public void start(Stage primaryStage) {
 
         HBox hBox = new HBox(5);
