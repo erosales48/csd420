@@ -1,3 +1,5 @@
+package org.example.csd420.Examples;
+
 public class RecursiveBinarySearch {
     public static int recursiveBinarySearch(int[] list, int key) {
         int low = 0;

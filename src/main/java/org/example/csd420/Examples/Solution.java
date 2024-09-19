@@ -1,3 +1,4 @@
+package org.example.csd420.Examples;
 import java.util.Comparator;
 
 public class Solution {

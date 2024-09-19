@@ -1,4 +1,4 @@
-package main.java;
+package org.example.csd420.Examples;
 
 import java.util.TreeMap;
 
