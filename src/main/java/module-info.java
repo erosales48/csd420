@@ -4,6 +4,7 @@ module org.example.csd420 {
     requires javafx.controls;
     requires javafx.fxml;
     requires jdk.jdi;
+    requires java.sql;
 
     opens org.example.csd420 to javafx.fxml;
     exports org.example.csd420;
