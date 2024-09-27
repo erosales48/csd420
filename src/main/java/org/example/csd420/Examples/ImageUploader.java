@@ -19,10 +19,11 @@ public class ImageUploader {
              FileInputStream fis = new FileInputStream(file)) {
 
             byte[] fileContent = new byte[(int) file.length()];
+            //noinspection ResultOfMethodCallIgnored
             fis.read(fileContent);
 
             String sql = "INSERT INTO " + tableName + " (" + columnName + ") VALUES (?)";
-            PreparedStatement pstmt = connection.prepareStatement(sql);
+            @SuppressWarnings("SqlSourceToSinkFlow") PreparedStatement pstmt = connection.prepareStatement(sql);
             pstmt.setBinaryStream(1, new ByteArrayInputStream(fileContent), fileContent.length);
 
             int row = pstmt.executeUpdate();
