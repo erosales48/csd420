@@ -5,6 +5,7 @@ module org.example.csd420 {
     requires javafx.fxml;
     requires jdk.jdi;
     requires java.sql;
+    requires mysql.connector.j;
 
     opens org.example.csd420 to javafx.fxml;
     exports org.example.csd420;
